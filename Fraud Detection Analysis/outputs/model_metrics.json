@@ -1,0 +1,77 @@
+{
+    "dataset": {
+        "total_transactions": 284807,
+        "fraud_count": 492,
+        "legitimate_count": 284315,
+        "fraud_percentage": 0.1727,
+        "total_fraud_loss_usd": 60127.97,
+        "avg_fraud_usd": 122.21,
+        "avg_legit_usd": 88.29
+    },
+    "logistic_regression": {
+        "recall": 0.9082,
+        "precision": 0.056,
+        "f1_score": 0.1055,
+        "roc_auc": 0.9717,
+        "confusion_matrix": {
+            "true_negative": 55363,
+            "false_positive": 1501,
+            "false_negative": 9,
+            "true_positive": 89
+        }
+    },
+    "random_forest": {
+        "recall": 0.8469,
+        "precision": 0.7094,
+        "f1_score": 0.7721,
+        "roc_auc": 0.9741,
+        "confusion_matrix": {
+            "true_negative": 56830,
+            "false_positive": 34,
+            "false_negative": 15,
+            "true_positive": 83
+        },
+        "top_features": [
+            {
+                "feature": "V14",
+                "importance": 0.2134
+            },
+            {
+                "feature": "V10",
+                "importance": 0.1162
+            },
+            {
+                "feature": "V4",
+                "importance": 0.113
+            },
+            {
+                "feature": "V17",
+                "importance": 0.0939
+            },
+            {
+                "feature": "V12",
+                "importance": 0.0792
+            },
+            {
+                "feature": "V3",
+                "importance": 0.0738
+            },
+            {
+                "feature": "V11",
+                "importance": 0.0654
+            },
+            {
+                "feature": "V16",
+                "importance": 0.0361
+            },
+            {
+                "feature": "V7",
+                "importance": 0.0271
+            },
+            {
+                "feature": "V2",
+                "importance": 0.0248
+            }
+        ]
+    }
+}
